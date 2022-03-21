@@ -29,10 +29,13 @@ body{
   color: #DDF8E8;
 }
 .dropdown-content{
-  display: none;
+  display: flex;
 
   margin-top: 60px;
   position: fixed;
+  transform: translateY(-400px);
+  transition: 0.5s ease-out;
+
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -166,6 +169,8 @@ footer div{
   }
   .dropdown-content-show{
     display: flex;
+    transform: translateY(0px);
+    transition: 0.5s ease-out;
   }
   header a{
     display: none;
