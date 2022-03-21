@@ -96,7 +96,7 @@ form > input[type=button]:hover{
 }
 
 @media screen and (max-width: 550px) {
-  .linear > div{
+  .linear > .radio{
     --background-color: red;
     font-size: 14px;
     height: auto;
