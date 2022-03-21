@@ -68,44 +68,53 @@
 
         <label>Rodzaj domu</label>
         <div class="linear">
-          <div class="radio-btn">
-            <img src="img/form/dom-parterowy.png" alt="plaski">
-            <label>Parterowy</label>
-          </div>
-          <div>
-            <img src="img/form/dom-zpoddaszem.png" alt="spadzisty">
-            <label>Z poddaszem</label>
-          </div>
-          <div>
-            <img src="img/form/dom-pietrowy.png" alt="spadzisty">
-            <label>Piętrowy</label>
-          </div>
+
+          <input type="radio" name="fhousetype" value="1" id="fh1"/>
+          <label class="radio" for="fh1">
+              <img src="img/form/dom-parterowy.png" alt="parterowy">
+              <div>Parterowy</div>
+          </label>
+
+          <input type="radio" name="fhousetype" value="2" id="fh2"/>
+          <label class="radio" for="fh2">
+              <img src="img/form/dom-zpoddaszem.png" alt="Z poddaszem">
+              <div>Z poddaszem</div>
+          </label>
+
+          <input type="radio" name="fhousetype" value="3" id="fh3"/>
+          <label class="radio" for="fh3">
+              <img src="img/form/dom-pietrowy.png" alt="pietrowy">
+              <div>Piętrowy</div>
+          </label>
+
         </div>
 
         <label>Rodzaj dachu</label>
         <div class="linear">
-          <div onclick="divClick()">
-            <img src="img/form/dach-plaski.png" alt="plaski">
-            <label>Płaski</label>
-          </div>
-          <div>
-            <img src="img/form/dach-spadzisty.png" alt="spadzisty">
-            <label>Dwuspadowy</label>
-          </div>
-          <div>
-            <img src="img/form/dach-spadzisty.png" alt="spadzisty">
-            <label>Wielospadowy</label>
-          </div>
-        </div>
+          <input type="radio" name="frooftype" value="1" id="r1"/>
+          <label class="radio" for="r1">
+              <img src="img/form/dach-plaski.png" alt="plaski">
+              <div>Płaski</div>
+          </label>
 
+          <input type="radio" name="frooftype" value="2" id="r2"/>
+          <label class="radio" for="r2">
+            <img src="img/form/dach-spadzisty.png" alt="spadzisty">
+            <div>Dwuspadowy</div>
+          </label>
+
+          <input type="radio" name="frooftype" value="3" id="r3"/>
+          <label class="radio" for="r3">
+            <img src="img/form/dach-spadzisty.png" alt="spadzisty">
+            <div>Wielospadowy</div>
+          </label>
+        </div>
 
         <input type="button" value="Dalej">
       </form>
     </div>
   </div>
-
-  <p id="demo"></p>
-
+  
   <script type="text/javascript" src="js/form.js"></script>
 
   <div class="footer-spacer"></div>

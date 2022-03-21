@@ -33,10 +33,24 @@ form > input[type=number]:focus, select:focus{
   gap: 2px;
 }
 
-.linear > div{
+.linear input[type=radio]{
+  display: none;
+}
+.linear input[type=radio]:hover + .radio{
+  border-bottom: 2px solid #DD8888;
+  font-weight: bold;
+}
+.linear input[type=radio]:checked + .radio{
+  background-color: #B4A6AB;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.linear > .radio{
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  cursor: pointer;
 
   border-bottom: 2px solid #946E83;
 
@@ -44,24 +58,10 @@ form > input[type=number]:focus, select:focus{
   width: 150px;
 
   margin-top: 10px;
-  --margin-bottom: 2px;
-  --padding-bottom: 2px;
 }
-.linear > div > img{
+.linear > .radio > img{
   height: 50px;
   width: auto;
-}
-.linear div:hover{
-  --border-bottom: 2px solid #946E83;
-  border-color: #DD8888;
-  font-weight: bold;
-  cursor: pointer;
-}
-.div-selected{
-  --border-bottom: 2px solid #DD8888;
-  background-color: #B4A6AB;
-  border-radius: 10px;
-  font-weight: bold;
 }
 
 form > input[type=button]{
