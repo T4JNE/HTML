@@ -2,6 +2,7 @@
   padding-top: 50px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 90vh;
@@ -16,6 +17,16 @@
   border-color: #946E83;
 
   transition: 4s;
+}
+.Mid > p{
+  font-size: 48px;
+  font-style: oblique;
+  font-weight: 700;
+  color: #615055;
+  --background-color: red;
+  margin-top: 0px;
+
+  transform: translateY(-25px);
 }
 
 #logo{

@@ -34,8 +34,19 @@
 
   <div class="Mid">
     <img id="logo" src="img/logo2.png" alt="LOGO HERE">
+    <p id="clock">00:00</p>
   </div>
 
+  <script type="text/javascript">
+    function displayTime() {
+      let d = new Date();
+      let time = d.toLocaleTimeString();
+      document.getElementById("clock").innerText = time;
+      let t = setTimeout(function(){ displayTime() }, 1000);
+    }
+
+    displayTime();
+  </script>
 
 
   <div class="MainContent">

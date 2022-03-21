@@ -15,5 +15,4 @@ $(document).ready(function(){
     //noc
     $(".Mid").css("background-color", "rgba(9,10,78,1)");
   }
-  console.log(hour);
 });
