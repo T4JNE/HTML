@@ -6,14 +6,16 @@
   justify-content: center;
   height: 90vh;
   min-height: 400px;
-  --background-color: #CDD5D1;
-  background: rgb(205,213,209);
-  background: linear-gradient(45deg, rgba(205,213,209,1) 0%, rgba(221,248,232,1) 100%);
+  background-color: #CDD5D1;
+  --background: rgb(205,213,209);
+  --background: linear-gradient(45deg, rgba(205,213,209,1) 0%, rgba(221,248,232,1) 100%);
   font-size: 42px;
   padding-bottom: 5%;
 
   border-bottom-style: solid;
   border-color: #946E83;
+
+  transition: 4s;
 }
 
 #logo{
