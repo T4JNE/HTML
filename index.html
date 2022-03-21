@@ -7,17 +7,27 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/startpage.css">
   <script src="js/anim.js"></script>
+  <script src="js/main.js"></script>
   <title>Bogusław Łęcina Usługi Budowlano-Remontowe</title>
 </head>
 <body>
   <div id="header-background">
     <header>
-      <a href="" class="active">Start</a>
+      <button id="dropdownbtn" onclick="MenuClick()">=</button>
+      <a href="index.html" class="active">Start</a>
       <a href="oferta.html">Oferta</a>
       <a href="kontakt.html">Kontakt</a>
       <a href="galeria.html">Galeria</a>
       <a href="praca.html">Praca</a>
     </header>
+  </div>
+
+  <div id="DropMenu" class="dropdown-content">
+    <a href="index.html" class="active">Start</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="praca.html">Praca</a>
   </div>
 
   <div class="Mid">

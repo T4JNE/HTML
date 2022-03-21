@@ -7,17 +7,27 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/workpage.css">
   <link rel="stylesheet" href="css/form.css">
+  <script src="js/main.js"></script>
   <title>Bogusław Łęcina: Oferta</title>
 </head>
 <body>
   <div id="header-background">
     <header>
+      <button id="dropdownbtn" onclick="MenuClick()">=</button>
       <a href="index.html">Start</a>
-      <a href="" class="active">Oferta</a>
+      <a href="oferta.html" class="active">Oferta</a>
       <a href="kontakt.html">Kontakt</a>
       <a href="galeria.html">Galeria</a>
       <a href="praca.html">Praca</a>
     </header>
+  </div>
+
+  <div id="DropMenu" class="dropdown-content">
+    <a href="index.html">Start</a>
+    <a href="oferta.html" class="active">Oferta</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="praca.html">Praca</a>
   </div>
 
   <div class="MainContent">
@@ -72,7 +82,7 @@
 
         <label>Rodzaj dachu</label>
         <div class="linear">
-          <div>
+          <div onclick="divClick()">
             <img src="img/form/dach-plaski.png" alt="plaski">
             <label>Płaski</label>
           </div>
@@ -91,6 +101,10 @@
       </form>
     </div>
   </div>
+
+  <p id="demo"></p>
+
+  <script type="text/javascript" src="js/form.js"></script>
 
   <div class="footer-spacer"></div>
   <footer>
