@@ -44,7 +44,8 @@
     <div>
       <form class="" action="#" method="post">
         <label>Powierzchnia domu [m<sup>2</sup>]</label><br>
-        <input type="number" name="farea" value="" placeholder="Powierzchnia domu..."><br><br>
+        <input type="number" name="farea" id="farea" value="" placeholder="Powierzchnia domu..."><br><br>
+        <p class="ErrorP" id="fareaErr"></p>
 
         <label>Województwo</label><br>
         <select id="fstate">
@@ -67,8 +68,7 @@
         </select><br><br>
 
         <label>Rodzaj domu</label>
-        <div class="linear">
-
+        <div class="linear ErrorDiv" id="HouseTypeErrorDiv">
           <input type="radio" name="fhousetype" value="1" id="fh1"/>
           <label class="radio" for="fh1">
               <img src="img/form/dom-parterowy.png" alt="parterowy">
@@ -86,11 +86,11 @@
               <img src="img/form/dom-pietrowy.png" alt="pietrowy">
               Piętrowy
           </label>
-
         </div>
+        <p class="ErrorP" id="HouseTypeErrorP"></p>
 
         <label>Rodzaj dachu</label>
-        <div class="linear">
+        <div class="linear ErrorDiv" id="RoofTypeErrorDiv">
           <input type="radio" name="frooftype" value="1" id="r1"/>
           <label class="radio" for="r1">
               <img src="img/form/dach-plaski.png" alt="plaski">
@@ -109,8 +109,9 @@
             Wielospadowy
           </label>
         </div>
+        <p class="ErrorP" id="RoofTypeErrorP"></p>
 
-        <input type="button" value="Dalej">
+        <input type="button" onclick="FormValidation()" value="Dalej">
       </form>
     </div>
   </div>
