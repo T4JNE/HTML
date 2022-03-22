@@ -41,6 +41,8 @@ body{
   align-items: center;
   gap: 4px;
 
+  z-index: 1;
+
   width: 50%;
 }
 .dropdown-content-show{
@@ -95,6 +97,8 @@ header{
 
   border-bottom-style: solid;
   border-color: #B4A6AB;
+
+  z-index: 2;
 }
 
 header a{
