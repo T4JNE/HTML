@@ -25,6 +25,7 @@
   border-color: #B4A6AB;
 }
 
+
 .MainContent img{
   display: flex;
   width: 100%;
@@ -32,10 +33,40 @@
   max-width: 600px;
 }
 
+.ImageGallery{
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  gap: 25px;
+}
+
+.ImageGallery .image{
+  border-radius: 20px;
+  box-shadow: 8px 12px 5px lightgray;
+
+  width: 90%;
+  max-width: 550px;
+  height: auto;
+
+  float: left;
+
+}
+
 .limitWidth{
-  --display: flex;
   width: 90vw;
   height: 75vh;
   max-width: 600px;
   max-height: 450px;
+}
+
+.Title{
+  display: flex;
+  align-self: center;
+  font-weight: 5em;
+  \
 }
