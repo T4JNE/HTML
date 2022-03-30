@@ -34,6 +34,8 @@
   font-size: 20px;
 
   transition: 0.2s;
+
+  margin-bottom: 50px;
 }
 .account a{
   border-style: solid;

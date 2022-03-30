@@ -1,6 +1,7 @@
 form{
   display: flex;
   flex-direction: column;
+  align-content: stretch;
   margin: 15px;
 }
 
